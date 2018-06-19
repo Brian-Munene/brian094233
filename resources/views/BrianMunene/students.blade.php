@@ -16,6 +16,7 @@
     </style>
 </head>
 <body>
+    @include ('nav')
    <form action="/students/save"  method="POST" >
    {{csrf_field()}}
    <h2>Register Student</h2> <br>
@@ -34,5 +35,6 @@
    <input type="submit" value="Submit"><br>
    
    </form> 
+   
 </body>
 </html>

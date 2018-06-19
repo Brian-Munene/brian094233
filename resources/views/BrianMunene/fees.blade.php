@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-    
+     @include ('nav')
     <form method="post" action="/feesresult" align="center">
         {{csrf_field()}}
         <h4>Search for student using the id:</h4>

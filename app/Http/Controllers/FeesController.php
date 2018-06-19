@@ -14,9 +14,10 @@ class FeesController extends Controller
      */
     public function index()
     {
-        echo 'The total fee paid by all students is: ' . fee::sum('fee_paid');
         $fees = fee::all();
-        return view('/BrianMunene.feesresult')->with('fees', $fees);
+        $sum= $fees->sum('fee_paid');
+        
+        return view('/BrianMunene.feesresult',compact('fees'),compact('sum'));
     }
 
     /**

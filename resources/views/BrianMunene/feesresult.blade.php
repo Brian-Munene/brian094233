@@ -28,6 +28,7 @@
     </style>
 </head>
 <body>
+    @include ('nav')
     <h2>Search results:</h2>
     <table>
         <thead>
@@ -45,5 +46,6 @@
             </tr>
         @endforeach
     </table>
+    The total fee paid by all students is: {{$sum}}  
 </body>
 </html>
