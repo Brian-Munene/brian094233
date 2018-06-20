@@ -65,7 +65,7 @@ class FeesController extends Controller
         
         $fees = Fee::where( 'id', $id['search'])->get();
 
-        return view('BrianMunene.feesresult')->with('fees', $fees);
+        return view('BrianMunene.searchresult')->with('fees', $fees);
 
         
 

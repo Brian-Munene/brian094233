@@ -29,4 +29,4 @@ Route::post('/students/save', 'StudentsController@store');
 Route::get('/fees/create', 'FeesController@create');
 Route::post('/fees/save', 'FeesController@store');
 Route ::get('/feesresult', 'FeesController@index');
-Route::post('/feesresult', 'FeesController@show');
+Route::post('/searchresult', 'FeesController@show');
